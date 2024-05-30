@@ -8,7 +8,7 @@ import Experiences from "./components/experiences";
 import SkillSec from "./components/skillSec";
 import ProjectSec from "./components/projects";
 import Contact from "./components/contact";
-// import ProjectGallery from "./components/projectGallery";
+import ScrollToTopButtom from "./components/bottomToTop";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -20,7 +20,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="App scroll-smooth relative">
       {loading ? (
         <Spinner />
       ) : (
@@ -33,6 +33,7 @@ function App() {
           <SkillSec />
           <ProjectSec />
           <Contact />
+          <ScrollToTopButtom />
         </>
       )}
     </div>
