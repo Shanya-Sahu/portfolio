@@ -7,8 +7,15 @@ import { FaEye } from "react-icons/fa";
 //   ];
 const projectdata = [
   {
+    name: `Lenny | E-Commerce`,
+    desc: "My newest e-commerce project blends cutting-edge tech with industry standards. A collaborative effort, I worked on both frontend and backend development.",
+    src: "https://e-commerce-fullstack-nine.vercel.app/",
+    techUse: "NextJS, Firebase, Hono, BunJS, Tailwind CSS",
+    github: "https://github.com/RanjanKudesia/e-commerce-fullstack",
+  },
+  {
     name: `Kairaan'24`,
-    desc: "This engaging freelance project highlights my prowess in frontend development, showcasing creativity and expertise in Frontend",
+    desc: "This engaging collaborative project highlights my prowess in frontend development, showcasing creativity and expertise in Frontend",
     src: "https://kairaan.vercel.app/",
     techUse: "Tailwind CSS, NextJs, RestAPI",
     github: "https://github.com/RanjanKudesia/preyansh",
@@ -26,13 +33,6 @@ const projectdata = [
     src: "https://random-gif-react.vercel.app/",
     techUse: "TailwindCSS, ReactJS, RestAPI",
     github: "https://github.com/Shanya-Sahu/random-gif",
-  },
-  {
-    name: "Todo List",
-    desc: "Discover the simplicity and efficiency of this React-built basic to-do list app, designed to enhance your productivity effortlessly.",
-    src: "https://todo-list-reactapp.vercel.app/",
-    techUse: "TailwindCSS, ReactJS",
-    github: "https://github.com/Shanya-Sahu/todo-app",
   },
   {
     name: "Github User Data Scrapper",
@@ -73,7 +73,7 @@ const ProjectSec = () => {
         Projects
       </h4>
       <h3 className="font-semibold text-2xl text-center uppercase">
-        I worked on multiple projects
+        My Latest Works
       </h3>
       <br />
 
