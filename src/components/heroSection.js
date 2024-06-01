@@ -1,30 +1,26 @@
 import React, { useState, useEffect } from "react";
 import bg from "../assets/banner_bg.png";
 import profile from "../assets/profile_img.jpg";
-import github from "../assets/github.png";
-import linkedin from "../assets/linkedin.webp";
 import { Link } from "react-scroll";
 
 function HeroSection() {
-  const handleDownload = () => {
-    // Create a temporary anchor element
-    const link = document.createElement("a");
-    // Set the href attribute to the path of your resume file
-    link.href = "../assets/shanya-resume.pdf";
-    // Set the download attribute to specify the file name
-    link.download = "Shanya_Sahu_Resume.pdf";
-    // Simulate a click event to trigger the download
-    link.click();
-  };
+  // const handleDownload = () => {
+  //   // Create a temporary anchor element
+  //   const link = document.createElement("a");
+  //   // Set the href attribute to the path of your resume file
+  //   link.href = "../assets/shanya-resume.pdf";
+  //   // Set the download attribute to specify the file name
+  //   link.download = "Shanya_Sahu_Resume.pdf";
+  //   // Simulate a click event to trigger the download
+  //   link.click();
+  // };
 
-  const githubUrl = "https://github.com/Shanya-Sahu";
-  const linkedinUrl = "https://www.linkedin.com/in/shanya-sahu-web-developer/";
+  const resume = "../assets/shanya-resume.pdf";
 
   function ChangingTypingEffect({ phrases, typingSpeed, switchDelay }) {
     const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
     const [displayedText, setDisplayedText] = useState("");
     const currentPhrase = phrases[currentPhraseIndex];
-
     useEffect(() => {
       let timer;
 
@@ -51,17 +47,17 @@ function HeroSection() {
       typingSpeed,
     ]);
 
-    return <h2 className="text-2xl">{displayedText}</h2>;
+    return <h2 className="text-xl xl:text-2xl">{displayedText}</h2>;
   }
 
   const phrases = [
-    "Frontend Web Developer",
+    "Full Stack Developer",
     "MERN Stack Developer",
     "WordPress Developer",
   ];
 
   return (
-    <div className="ml-[10%]" id="heroSec">
+    <div className="ml-0 xl:ml-[10%]" id="heroSec">
       <section className="relative hero">
         {/* <video
           src={bg}
@@ -73,14 +69,14 @@ function HeroSection() {
         <img
           src={bg}
           alt=""
-          className="w-full h-[110vh] object-cover animate-move-up"
+          className="w-full h-[800px] object-cover animate-move-up"
         />
-        <div className="absolute top-0 pl-20 w-full h-full flex justify-center items-center">
-          <div className="w-[40%] flex justify-center items-start flex-col pt-20">
-            <h3 className="text-3xl leading-10 bg-highlight w-full font-semibold">
+        <div className="absolute top-0 pl-0 md:pl-10 xl:pl-20 w-full h-full flex justify-center items-center flex-col-reverse lg:flex-row">
+          <div className="w-full lg:w-[60%] xl:w-[40%] flex justify-center items-center lg:items-start flex-col">
+            <h3 className="text-xl xl:text-2xl leading-10 bg-highlight font-semibold">
               Hello!
             </h3>
-            <h1 className="text-6xl font-bold leading-tight">
+            <h1 className="text-4xl xl:text-6xl font-bold leading-tight">
               I'm Shanya Sahu
             </h1>
             <div className="border-l-4 border-[var(--yellow)] pl-3 ">
@@ -91,32 +87,17 @@ function HeroSection() {
                 switchDelay={1000} // Adjust delay between switches in milliseconds
               />
             </div>
-            <div className="flex justify-start items-center mt-4">
-              <a href={githubUrl} target="_blank">
-                <img
-                  src={github}
-                  alt="github"
-                  className="w-[30px] h-[30px] object-contain m-1"
-                />
-              </a>
-              <a href={linkedinUrl} target="_blank">
-                <img
-                  src={linkedin}
-                  alt="linkedin"
-                  className="w-[31px] h-[31px] object-contain m-1"
-                />
-              </a>
-            </div>
-            <div className="flex">
-              <button
-                onClick={handleDownload}
-                className="mr-4 mt-6 float-left py-5 px-14 shadow-lg rounded-full bg-[var(--yellow)] text-white"
+            <div className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start">
+              <a
+                download="resume.pdf"
+                href={resume}
+                className="mr-0 md:mr-4 mt-6 float-left py-5 px-14 shadow-lg rounded-full bg-[var(--yellow)] text-white"
               >
                 Download Resume
-              </button>
+              </a>
               <Link to="contact" smooth={true} duration={500}>
                 <button
-                  className="mr-4 mt-6 float-left py-5 px-14 shadow-lg
+                  className="mr-0 md:mr-4 mt-6 float-left py-5 px-14 shadow-lg
                 rounded-full bg-[var(--pink)] text-white"
                 >
                   {" "}
@@ -125,18 +106,23 @@ function HeroSection() {
               </Link>
             </div>
 
-            <Link to="contact" smooth={true} duration={500}>
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              className="hidden lg:block"
+            >
               <button className="mr-4 mt-8 absolute bottom-[100px] right-10 py-5 px-14 shadow-lg rounded-full bg-[var(--orange)] text-white">
                 Hire Me
               </button>
             </Link>
           </div>
 
-          <div className="w-[60%] flex justify-center items-end animate-move-up mr-5">
+          <div className="my-10 lg:my-0 w-full lg:w-[40%] xl:w-[60%] flex justify-center items-end animate-move-up mr-0 md:mr-5">
             <img
               src={profile}
               alt="profile_image"
-              className="object-cover w-[500px] h-[500px] rounded-full"
+              className="object-cover w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] xl:w-[500px] xl:h-[500px] rounded-full"
             />
           </div>
         </div>

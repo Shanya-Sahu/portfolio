@@ -9,6 +9,7 @@ import SkillSec from "./components/skillSec";
 import ProjectSec from "./components/projects";
 import Contact from "./components/contact";
 import ScrollToTopButtom from "./components/bottomToTop";
+import Footer from "./components/footer";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -26,14 +27,17 @@ function App() {
       ) : (
         <>
           <Sidebar />
-          <HeroSection />
-          <About />
-          <GoodAt />
-          <Experiences />
-          <SkillSec />
-          <ProjectSec />
-          <Contact />
-          <ScrollToTopButtom />
+          <aside>
+            <HeroSection />
+            <About />
+            <GoodAt />
+            <Experiences />
+            <SkillSec />
+            <ProjectSec />
+            <Contact />
+            <ScrollToTopButtom />
+            <Footer />
+          </aside>
         </>
       )}
     </div>

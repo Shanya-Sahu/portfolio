@@ -41,7 +41,7 @@ const skills = [
 
 const SkillBar = ({ skill }) => (
   <div>
-    <div className="flex items-center mb-8 w-[90%]">
+    <div className="flex items-center mb-8 w-full lg:w-[90%]">
       <img
         src={skill.icon}
         alt={`${skill.name} icon`}

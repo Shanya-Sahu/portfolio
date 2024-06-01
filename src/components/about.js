@@ -3,24 +3,15 @@ import profile from "../assets/profile_img.jpg";
 import { Link } from "react-scroll";
 
 function About() {
-  const handleDownload = () => {
-    // Create a temporary anchor element
-    const link = document.createElement("a");
-    // Set the href attribute to the path of your resume file
-    link.href = "../assets/shanya-resume.pdf";
-    // Set the download attribute to specify the file name
-    link.download = "Shanya_Sahu_Resume.pdf";
-    // Simulate a click event to trigger the download
-    link.click();
-  };
+  const resume = "../assets/shanya-resume.pdf";
 
   return (
     <div
-      className="ml-[12%] h-full flex justify-center items-center p-[100px] mr-[5%]"
+      className="ml-0 xl:ml-[12%] h-full flex justify-center items-center flex-col lg:flex-row px-5 md:px-20 pb-20 lg:p-[100px] mr-0 xl:mr-[5%]"
       id="about"
     >
-      <div className="w-[45%]">
-        <div className="flex justify-center items-start flex-col border-4 border-[var(--pink)] py-5 m-10">
+      <div className="w-full lg:w-[45%] hidden lg:block">
+        <div className="flex justify-center items-start flex-col border-4 border-[var(--pink)] py-5 mr-5 m-0 xl:m-10">
           <img
             src={profile}
             alt="profile_image"
@@ -28,11 +19,11 @@ function About() {
           />
         </div>
       </div>
-      <div className="w-[55%] h-full flex justify-center items-start flex-col pl-5">
+      <div className="w-full lg:w-[55%] h-full flex justify-center items-center lg:items-start flex-col pl-5">
         <h4 className="text-sm text-[var(--pri-heading)] font-medium">
           About Me
         </h4>
-        <h3 className="font-semibold text-2xl uppercase">
+        <h3 className="font-semibold text-2xl uppercase text-center lg:text-left">
           Crafting Dynamic Web Solutions with Passion and Expertise
         </h3>
         <br />
@@ -60,13 +51,14 @@ function About() {
         </h4>
         <p className="text-sm">Full Stack Developer</p>
 
-        <div className="flex">
-          <button
-            onClick={handleDownload}
+        <div className="hidden lg:flex">
+          <a
+            download="resume.pdf"
+            href={resume}
             className="mr-4 mt-6 float-left py-5 px-14 shadow-lg rounded-full bg-[var(--yellow)] text-white"
           >
             Download Resume
-          </button>
+          </a>
           <Link to="contact" smooth={true} duration={500}>
             <button className="mr-4 mt-6 float-left py-5 px-14 shadow-lg rounded-full bg-[var(--pink)] text-white">
               Hire Me

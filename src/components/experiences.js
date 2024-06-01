@@ -2,7 +2,7 @@ import React from "react";
 
 function Experiences() {
   return (
-    <div id="experience" className="pl-[15%] pr-[6%] py-20">
+    <div id="experience" className="pl-[6%] xl:pl-[15%] pr-[6%] py-20">
       <h4 className="text-sm text-[var(--pri-heading)] font-medium text-center">
         Experiences
       </h4>
@@ -10,7 +10,7 @@ function Experiences() {
         I had worked on multiple companies!
       </h3>
       <section className="grid w-full">
-        <div className="w-[50%] flex justify-center items-center m-5 justify-self-start">
+        <div className="w-full md:w-[80%] lg:w-[50%] flex justify-center items-center m-0 mt-16 md:m-5 justify-self-start flex-col md:flex-row">
           <div className="bg-[--pink] text-white py-9 px-14 m-[1px] shadow-lg">
             <h3 className="text-4xl my-1">2023</h3>
             <p className="text-white">Oct to Pre</p>
@@ -35,7 +35,7 @@ function Experiences() {
             </p>
           </div>
         </div>
-        <div className="w-[50%] flex justify-center items-center m-5 justify-self-end">
+        <div className="w-full md:w-[80%] lg:w-[50%] flex justify-center items-center m-0 mt-16 md:m-5 justify-self-end flex-col md:flex-row">
           <div className="bg-[--orange] text-white py-9 px-14 m-[1px] shadow-lg">
             <h3 className="text-4xl my-1">2023</h3>
             <p className="text-white">Feb to Sep</p>
@@ -59,7 +59,7 @@ function Experiences() {
             </p>
           </div>
         </div>
-        <div className="w-[50%] flex justify-center items-center self-end m-5 justify-self-start">
+        <div className="w-full md:w-[80%] lg:w-[50%] flex justify-center items-center self-end m-0 mt-16 md:m-5 justify-self-start flex-col md:flex-row">
           <div className="bg-[--yellow] text-white py-9 px-14 m-[1px] shadow-lg">
             <h3 className="text-4xl my-1">2022</h3>
             <p className="text-white">Sep to Feb</p>
@@ -83,7 +83,7 @@ function Experiences() {
             </p>
           </div>
         </div>
-        <div className="w-[50%] flex justify-center items-center self-start m-5 justify-self-end">
+        <div className="w-full md:w-[80%] lg:w-[50%] flex justify-center items-center self-start m-0 mt-16 md:m-5 justify-self-end flex-col md:flex-row">
           <div className="bg-[--pri-heading] text-white py-9 px-14 m-[1px] shadow-lg">
             <h3 className="text-4xl my-1">2022</h3>
             <p className="text-white">Jun to Sep</p>

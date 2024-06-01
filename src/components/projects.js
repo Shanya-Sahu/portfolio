@@ -8,7 +8,7 @@ import { FaEye } from "react-icons/fa";
 const projectdata = [
   {
     name: `Lenny | E-Commerce`,
-    desc: "My newest e-commerce project blends cutting-edge tech with industry standards. A collaborative effort, I worked on both frontend and backend development.",
+    desc: "My latest e-commerce project, A collaborative effort, I worked on both frontend and backend development.",
     src: "https://e-commerce-fullstack-nine.vercel.app/",
     techUse: "NextJS, Firebase, Hono, BunJS, Tailwind CSS",
     github: "https://github.com/RanjanKudesia/e-commerce-fullstack",
@@ -68,7 +68,7 @@ const Projects = ({ project }) => (
 
 const ProjectSec = () => {
   return (
-    <div className="p-4 w-full pl-[15%] pr-[6%] py-20" id="projects">
+    <div className="p-4 w-full pl-[6%] xl:pl-[15%] pr-[6%] py-20" id="projects">
       <h4 className="text-sm text-[var(--pri-heading)] font-medium text-center">
         Projects
       </h4>
@@ -77,7 +77,7 @@ const ProjectSec = () => {
       </h3>
       <br />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-10">
         {projectdata.map((project, index) => (
           <div key={index}>
             <Projects project={project} />
