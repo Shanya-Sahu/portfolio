@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import bg from "../assets/banner_bg.png";
-import profile from "../assets/profile_img.jpg";
+import profile from "../assets/profile.jpg";
 import { Link } from "react-scroll";
 
 function HeroSection() {

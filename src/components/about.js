@@ -1,5 +1,5 @@
 import React from "react";
-import profile from "../assets/profile_img.jpg";
+import profile from "../assets/profile.jpg";
 import { Link } from "react-scroll";
 
 function About() {

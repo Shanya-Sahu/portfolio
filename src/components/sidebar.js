@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
-import profile from "../assets/profile_img.jpg";
+import profile from "../assets/profile.jpg";
 import github from "../assets/github.png";
 import linkedin from "../assets/linkedin.webp";
 import { RxCross2 } from "react-icons/rx";
