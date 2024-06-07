@@ -2,21 +2,9 @@ import React, { useState, useEffect } from "react";
 import bg from "../assets/banner_bg.png";
 import profile from "../assets/profile.jpg";
 import { Link } from "react-scroll";
+import Resume from "../assets/shanya-resume.pdf";
 
 function HeroSection() {
-  // const handleDownload = () => {
-  //   // Create a temporary anchor element
-  //   const link = document.createElement("a");
-  //   // Set the href attribute to the path of your resume file
-  //   link.href = "../assets/shanya-resume.pdf";
-  //   // Set the download attribute to specify the file name
-  //   link.download = "Shanya_Sahu_Resume.pdf";
-  //   // Simulate a click event to trigger the download
-  //   link.click();
-  // };
-
-  const resume = "../assets/shanya-resume.pdf";
-
   function ChangingTypingEffect({ phrases, typingSpeed, switchDelay }) {
     const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
     const [displayedText, setDisplayedText] = useState("");
@@ -89,8 +77,8 @@ function HeroSection() {
             </div>
             <div className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start">
               <a
-                download="resume.pdf"
-                href={resume}
+                download="shanya-resume"
+                href={Resume}
                 className="mr-0 md:mr-4 mt-6 float-left py-5 px-14 shadow-lg rounded-full bg-[var(--yellow)] text-white"
               >
                 Download Resume

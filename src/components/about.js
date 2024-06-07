@@ -1,10 +1,9 @@
 import React from "react";
 import profile from "../assets/profile.jpg";
 import { Link } from "react-scroll";
+import Resume from "../assets/shanya-resume.pdf";
 
 function About() {
-  const resume = "../assets/shanya-resume.pdf";
-
   return (
     <div
       className="ml-0 xl:ml-[12%] h-full flex justify-center items-center flex-col lg:flex-row px-5 md:px-20 pb-20 lg:p-[100px] mr-0 xl:mr-[5%]"
@@ -53,8 +52,8 @@ function About() {
 
         <div className="hidden lg:flex">
           <a
-            download="resume.pdf"
-            href={resume}
+            download="shanya-resume"
+            href={Resume}
             className="mr-4 mt-6 float-left py-5 px-14 shadow-lg rounded-full bg-[var(--yellow)] text-white"
           >
             Download Resume
