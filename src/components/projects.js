@@ -56,10 +56,10 @@ const Projects = ({ project }) => (
     <p className="text-sm font-semibold py-2">{project.techUse}</p>
     <p className="text-sm">{project.desc}</p>
     <div className="flex justify-between items-center mt-5">
-      <a href={project.src} target="_blank">
+      <a href={project.src} target="_blank" rel="noreferrer">
         <FaEye className="hover:text-[var(--pri-heading)] text-xl" />
       </a>
-      <a href={project.github} target="_blank">
+      <a href={project.github} target="_blank" rel="noreferrer">
         <IoLogoGithub className="hover:text-[var(--pri-heading)] text-xl" />
       </a>
     </div>
