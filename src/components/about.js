@@ -54,6 +54,7 @@ function About() {
           <a
             download="shanya-resume"
             href={Resume}
+            rel="noreferrer"
             className="mr-4 mt-6 float-left py-5 px-14 shadow-lg rounded-full bg-[var(--yellow)] text-white"
           >
             Download Resume

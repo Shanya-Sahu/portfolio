@@ -93,14 +93,14 @@ function Sidebar() {
         <div className="mt-5 text-center">
           <p className="text-sm">Follow</p>
           <div className="flex justify-start items-center">
-            <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+            <a href={githubUrl} target="_blank" rel="noreferrer">
               <img
                 src={github}
                 alt="github"
                 className="w-5 h-5 object-contain m-2"
               />
             </a>
-            <a href={linkedinUrl} target="_blank" rel="noopener noreferrer">
+            <a href={linkedinUrl} target="_blank" rel="noreferrer">
               <img
                 src={linkedin}
                 alt="linkedin"
