@@ -37,6 +37,10 @@ function Sidebar() {
           isMenuOpen ? "translate-x-0" : "-translate-x-full"
         } xl:translate-x-0`}
       >
+        <RxCross2
+          className="text-xl cursor-pointer absolute right-2 top-2"
+          onClick={menuToggleHandler}
+        />
         <Link to="heroSec" smooth={true} duration={500}>
           <img
             src={profile}
