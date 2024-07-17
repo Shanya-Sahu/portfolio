@@ -1,5 +1,5 @@
 import React from "react";
-import profile from "../assets/profile.jpg";
+import profile from "../assets/profile_pic.png";
 import { Link } from "react-scroll";
 import Resume from "../assets/shanya-resume.pdf";
 
@@ -9,7 +9,7 @@ function About() {
       className="ml-0 xl:ml-[12%] h-full flex justify-center items-center flex-col lg:flex-row px-5 md:px-20 pb-20 lg:p-[100px] mr-0 xl:mr-[5%]"
       id="about"
     >
-      <div className="w-full lg:w-[45%] hidden lg:block">
+      <div className="w-full lg:w-[50%] hidden lg:block">
         <div className="flex justify-center items-start flex-col border-4 border-[var(--pink)] py-5 mr-5 m-0 xl:m-10">
           <img
             src={profile}
@@ -18,7 +18,7 @@ function About() {
           />
         </div>
       </div>
-      <div className="w-full lg:w-[55%] h-full flex justify-center items-center lg:items-start flex-col pl-5">
+      <div className="w-full lg:w-[50%] h-full flex justify-center items-center lg:items-start flex-col pl-5">
         <h4 className="text-sm text-[var(--pri-heading)] font-medium">
           About Me
         </h4>

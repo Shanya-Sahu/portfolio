@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
-import profile from "../assets/profile.jpg";
+import profile from "../assets/profile_pic.png";
 import github from "../assets/github.png";
 import linkedin from "../assets/linkedin.webp";
 import { RxCross2 } from "react-icons/rx";
@@ -38,7 +38,7 @@ function Sidebar() {
         } xl:translate-x-0`}
       >
         <RxCross2
-          className="text-xl cursor-pointer absolute right-2 top-2"
+          className="text-xl cursor-pointer absolute right-2 top-2 xl:hidden"
           onClick={menuToggleHandler}
         />
         <Link to="heroSec" smooth={true} duration={500}>

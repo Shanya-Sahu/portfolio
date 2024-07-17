@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import bg from "../assets/banner_bg.png";
-import profile from "../assets/profile.jpg";
+import profile from "../assets/profile_pic.png";
 import { Link } from "react-scroll";
 import Resume from "../assets/shanya-resume.pdf";
 
