@@ -21,6 +21,13 @@ const projectdata = [
     github: "https://github.com/RanjanKudesia/preyansh",
   },
   {
+    name: "COLLIKORPORATE",
+    desc: "This is a collaborative project where I was responsible for the entire frontend development, utilizing Next.js and Tailwind CSS.",
+    src: "https://collikorporate.com/",
+    techUse: "NextJS, Tailwind CSS",
+    github: "#",
+  },
+  {
     name: "The Blogging Bee",
     desc: "A dynamic blog reading app powered by React, Tailwind, RestAPI, and global state management with React Context.",
     src: "https://the-blogging-bee.vercel.app/",
@@ -41,13 +48,13 @@ const projectdata = [
     techUse: "Html5, Tailwind CSS, Javascript",
     github: "https://github.com/Shanya-Sahu/Github_User_Data_Scrapper",
   },
-  {
-    name: "Tic Tac Toe",
-    desc: "Experience classic fun with this Tic Tac Toe game crafted using HTML5, Tailwind CSS, and JavaScript for a sleek and engaging gameplay.",
-    src: "https://shanya-sahu.github.io/tic-tac-toe/",
-    techUse: "Html5, Tailwind CSS, Javascript",
-    github: "https://github.com/Shanya-Sahu/tic-tac-toe",
-  },
+  // {
+  //   name: "Tic Tac Toe",
+  //   desc: "Experience classic fun with this Tic Tac Toe game crafted using HTML5, Tailwind CSS, and JavaScript for a sleek and engaging gameplay.",
+  //   src: "https://shanya-sahu.github.io/tic-tac-toe/",
+  //   techUse: "Html5, Tailwind CSS, Javascript",
+  //   github: "https://github.com/Shanya-Sahu/tic-tac-toe",
+  // },
 ];
 
 const Projects = ({ project }) => (
