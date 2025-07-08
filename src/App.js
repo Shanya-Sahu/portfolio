@@ -10,6 +10,7 @@ import ProjectSec from "./components/projects";
 import Contact from "./components/contact";
 import ScrollToTopButtom from "./components/bottomToTop";
 import Footer from "./components/footer";
+import Education from "./components/education";
 
 function App() {
   // const [loading, setLoading] = useState(true);
@@ -32,6 +33,7 @@ function App() {
           <About />
           <GoodAt />
           <Experiences />
+          <Education />
           <SkillSec />
           <ProjectSec />
           <Contact />

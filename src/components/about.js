@@ -27,28 +27,25 @@ function About() {
         </h3>
         <br />
         <p>
-          {/* Hi, I'm Shanya Sahu, a passionate web developer currently employed at
-          Creatus Media. Learning the MERN stack, I strive for excellence in
-          crafting dynamic and efficient web solutions. With a strong command of
-          WordPress and experience in Shopify, I bring versatility to my work.
-          Eager to explore new opportunities that challenge and elevate my
-          skills in the MERN stack, I am committed to continuous learning and
-          growth in the ever-evolving field of web development. */}
-          Hi, I'm Shanya Sahu, a passionate web developer currently employed at
-          Creatus Media. I'm currently leveling up my skills with Next.js,
-          striving for excellence in crafting dynamic and efficient web
-          solutions. I also know the MERN stack and have experience in WordPress
-          and Shopify, bringing versatility to my work. Eager to explore new
-          opportunities that challenge and elevate my skills, I am committed to
-          continuous learning and growth in the ever-evolving field of web
-          development.
+          I’m Shanya Sahu, I bring <b>3 years</b> of development experience,
+          including <b>1.5 years of freelance work</b>, specializing in building
+          responsive, high-performance web applications using{" "}
+          <b>Next.js and Tailwind CSS</b>. Currently employed at Creatus Media,
+          I am expanding my expertise toward <b>Full Stack Development</b> with
+          a growing command of{" "}
+          <b>TypeScript, Express.js, MongoDB, and PostgreSQL</b>. I also have a
+          knowledge in the <b>MERN stack</b> and hands-on experience with{" "}
+          <b>WordPress and Shopify</b>, which adds versatility to my technical
+          skill set. I’m actively seeking a <b>Full Stack Developer Role</b>{" "}
+          that will allow me to further deepen my skills, take on new
+          challenges, and contribute meaningfully to impactful projects.
         </p>
 
         <br />
-        <h4 className="text-xl text-[var(--pri-heading)] font-medium">
+        <h4 className="text-xl text-[var(--pri-heading)] font-semibold">
           Shanya Sahu
         </h4>
-        <p className="text-sm">Full Stack Developer</p>
+        <p className="text-sm font-bold">Full Stack Developer</p>
 
         <div className="hidden lg:flex">
           <a
