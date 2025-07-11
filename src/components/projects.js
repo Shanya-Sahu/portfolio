@@ -7,15 +7,22 @@ import { FaEye } from "react-icons/fa";
 //   ];
 const projectdata = [
   {
+    name: "Project Tracker",
+    desc: "Handled frontend development with login, signup, forgot password flows; built and integrated related authentication APIs.",
+    src: "https://project-tracker-client.coolify.activodigi.com",
+    techUse: "NextJS, Tailwind CSS, PostgreSQL, ExpressJS, JWT",
+    github: "#",
+  },
+  {
     name: `Ayodhya Pro`,
-    desc: "AyodhyaPro is a comprehensive platform designed to explore the vibrant city of Ayodhya. I contributed to this project as a freelancer.",
+    desc: "Developed complete frontend with API integration. In backend, created Hotel, Precious Moments, About Ayodhya, and Events APIs",
     src: "https://ayodhyapro.com/",
     techUse: "NextJS, Tailwind CSS, PostgreSQL, ExpressJS",
     github: "#",
   },
   {
     name: `Lenny | E-Commerce`,
-    desc: "This is freelancing e-commerce project, collaboratively developed with full involvement in both frontend and backend development.",
+    desc: "Built Product page, navbar, footer, and article section on frontend; developed Article API and Single Product API in backend.",
     src: "https://e-commerce-fullstack-nine.vercel.app/",
     techUse: "NextJS, Firebase, Hono, BunJS, Tailwind CSS",
     github: "#",
@@ -41,27 +48,6 @@ const projectdata = [
     techUse: "TailwindCSS, ReactJS, RestAPI",
     github: "https://github.com/Shanya-Sahu/the-blogging-bee",
   },
-  // {
-  //   name: "Random Gif Generator",
-  //   desc: "Indulge in the joy of spontaneity with this React-based application that creates random GIFs instantly for endless entertainment!",
-  //   src: "https://random-gif-react.vercel.app/",
-  //   techUse: "TailwindCSS, ReactJS, RestAPI",
-  //   github: "https://github.com/Shanya-Sahu/random-gif",
-  // },
-  {
-    name: "Github User Data Scrapper",
-    desc: "Explore a dynamic web application that leverages the GitHub API to fetch and display user profiles based on search queries.",
-    src: "https://shanya-sahu.github.io/Github_User_Data_Scrapper/",
-    techUse: "Html5, Tailwind CSS, Javascript",
-    github: "https://github.com/Shanya-Sahu/Github_User_Data_Scrapper",
-  },
-  // {
-  //   name: "Tic Tac Toe",
-  //   desc: "Experience classic fun with this Tic Tac Toe game crafted using HTML5, Tailwind CSS, and JavaScript for a sleek and engaging gameplay.",
-  //   src: "https://shanya-sahu.github.io/tic-tac-toe/",
-  //   techUse: "Html5, Tailwind CSS, Javascript",
-  //   github: "https://github.com/Shanya-Sahu/tic-tac-toe",
-  // },
 ];
 
 const Projects = ({ project }) => (
